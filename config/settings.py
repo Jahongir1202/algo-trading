@@ -10,10 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+
+import os
 from pathlib import Path
 from environs import Env
 import dj_database_url
-
+from dotenv import load_dotenv
+load_dotenv()
 env = Env()
 env.read_env()
 
@@ -24,13 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.bool("SECRET_KEY")
-
+SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=True)
 
-ALLOWED_HOSTS = env.bool('ALLOWED_HOSTS', '*').split()
-
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split()
 # Application definition
 
 INSTALLED_APPS = [
