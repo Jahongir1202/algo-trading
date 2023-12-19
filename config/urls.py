@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 
 
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",include("accounts.urls")),
@@ -30,10 +31,8 @@ urlpatterns = [
     # path("",include('pages.urls')),
     # path('accounts/', include('accounts.urls')),  # accounts ilgari yaratilgan URL patternni qo'shing
 
-]+i18n_patterns(
-    path('i18n/', include('django.conf.urls.i18n')),
-    path("", include("accounts.urls")),
+]+static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
 
 )
 if settings.DEBUG:
-    urlpatterns +=static(settings.STATICFILES_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns +=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
