@@ -35,3 +35,5 @@ urlpatterns = [
     path("", include("accounts.urls")),
 
 )
+if settings.DEBUG:
+    urlpatterns +=static(settings.STATICFILES_URL, document_root=settings.STATIC_ROOT)
