@@ -32,6 +32,7 @@
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
 
 
+
 </head>
 
 <body>
@@ -55,24 +56,29 @@
                                 Call : +998 (99) 844 67 41  +998 (99) 814 42 48
                             </span>
                             </a>
-                            <a style=" position: relative; left: 100px; font-size: 50px;" href="https://t.me/propalgotrading">
-                                <i style="color: rgb(95, 255, 80);" class="fa fa-telegram"></i>
-                            </a>
-                            <a style="left: 120px; position: relative; font-size: 50px;" href="https://instagram.com/prop_algo_trading">
-                                <i style="background-image: linear-gradient(to top  right, #ddec0b  , blue 10%, #8b0505); border-radius: 20%; height: 45px; " class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a style="left: 190px; margin-left: 20px; position: relative; font-size: 30px;" href="#">
-                                <i class="fa fa-uz" aria-hidden="true">🇺🇿</i>
-                            </a>
-                            <a style="left: 190px; margin-left: 20px; position: relative; font-size: 30px;" href="{%url 'pageru'%}">
-                                <i class="fa fa-ru" aria-hidden="true">🇷🇺</i>
-                            </a>
                         </div>
-
                     </div>
-
                 </nav>
+                <a class="iconca" href="https://t.me/propalgotrading">
+                    <i style="color: rgb(95, 255, 80);" class="fa fa-telegram"></i>
+                </a>
+                <a style="left: 120px; position: relative; font-size: 50px;" href="https://instagram.com/prop_algo_trading">
+                    <i style="background-image: linear-gradient(to top  right, #ddec0b  , blue 10%, #8b0505); border-radius: 20%; height: 45px; " class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <div class="tar_in">
+                    <a class="tarjima" style="left: 190px; margin-left: 20px; position: relative; font-size: 30px;" href="#">
+                        <i class="fa fa-uz" aria-hidden="true">🇺🇿</i>
+                    </a>
+                    <a class="tarjima" style="left: 190px; margin-left: 20px; position: relative; font-size: 30px;" href="{%url 'pageru'%}">
+                        <i class="fa fa-ru" aria-hidden="true">🇷🇺</i>
+                    </a>
+                </div>
                 <style>
+                    .tar_in{
+                        position: relative;
+                        left: -100px;
+                        
+                    }
                     .page_insert {
                         top: 10px;
                         width: 100%;
@@ -83,21 +89,12 @@
                         border-radius: 30px;
                         box-shadow: 10px 10px 12px rgb(108, 110, 110) inset;
                     }
-                    /* .page_insert {
-                    width: 100%;
-                    position: relative;
-                    height: 700px;
-                    background-color: mintcream;
-                    border-radius: 30px;
-                    box-shadow: 10px -10px 12px rgb(247, 250, 250) inset;
-                }
-                
-                @media screen and (max-width: 768px) {
-                    .page_insert {
-                        height: 1000px;
-                    }
-                } */
                     
+                    .iconca{
+                        position: relative; 
+                        left: 100px; 
+                        font-size: 50px;
+                    }
                     .page_imgbac {
                         position: relative;
                         z-index: 2;
@@ -122,7 +119,6 @@
                     
                     .text1_p {
                         position: relative;
-                        /* top: 14px; */
                     }
                     
                     .p1_bac {
@@ -195,7 +191,6 @@
                     
                     .page_logo {
                         position: relative;
-                        z-index: 3;
                         display: block;
                         text-align: center;
                         top: -300px;
@@ -219,7 +214,7 @@
                         display: inline-block
                     }
                     
-                    .logo_img {
+                    .logo_imgs {
                         position: relative;
                         border-radius: 50%;
                         width: 100px;
@@ -228,7 +223,6 @@
                     
                     .logo_img1 {
                         position: relative;
-                        /* border-radius: 50%; */
                         width: 170px;
                         height: 70px;
                     }
@@ -245,19 +239,51 @@
                     .page_insert {
                         width: 100%;
                         position: relative;
+                        display: block;
                         height: 700px;
                         background-color: lightgray;
                         border-radius: 30px;
                         box-shadow: 10px -10px 12px rgb(247, 250, 250) inset;
+
+                    }
+                    @media screen and (min-width:1376){
+                        .page_servis {
+                            top: 100px;
+                            
+                        }
+
+                        
+                    }
+                    @media (min-width: 1000px) and (max-width: 1375px){
+                        .page_servis {
+                            left: 10px;
+                            top: 0;
+                            
+                            
+                        }
+                        .page_logo{
+                            top: 0px;
+                        }
+                        .servis_ph4{
+                            font-size: 1rem;
+                        }
                     }
                     
-                    @media screen and (max-width: 1008px) {
+                    @media screen and (max-width: 1000px) {
+                        
                         .page_img2 {
                             width: 100%;
                         }
                         .page_insert {
-                            height: 1000px;
+                            top: -50px;
+                            height: 1200px;
                         }
+                        .tar_in{
+                            position: relative;
+                            
+                            left: -100px;
+                        }
+                        
                         .page_text1 {
                             width: 95%;
                             top: 0px;
@@ -285,16 +311,13 @@
                             font-size: 20px;
                             margin: 0;
                         }
-                        .servis_text1{
-                            /* width: 50%; */
-                        }
+                        
                         .page_servis {
-                            /* position: relative; */
-                            /* display: block; */
+                            
                             padding: 0;
                             top: -250px;
                             left: 120px ;
-                            width: 280px;
+                            width: 240px;
                         }
                         
                         
@@ -307,19 +330,34 @@
                             margin: 0px 0px 0px;
                         }
                         .logo_link_text {
+                        
                             color: aliceblue;
                         }
                         .page_logo {
                             position: relative;
                             top: -250px;
                         }
+                        .logo_conter{
+                            font-size: 0rem;
+
+                        }
                         
+                        .logo_imgs{
+                            width: 75px;
+                            height: auto;
+                            margin: 10px 0px;
+                        }
+                        .logo_imgs1{
+                            position: relative;
+                            width: 75px;
+                            height: 30px;
+                            top: -30px;
+                        }
                     }
                 </style>
                 <div class="page_insert">
                     <div class="page_sfera"></div>
                     <div class="page_sferablue"></div>
-                    <div class="page_imgbac"><img class="page_img2" src="/static/images/dollor3.png" alt=""></div>
                     <div class="page_text1">
                         <h3 class="page_text1_h3">Prop kompaniyalaridan, imtihonlardan utib berish va savdo robotlarini ijaraga berish xizmatini boshladik</h3>
                         <div class="text1_p">
@@ -354,22 +392,16 @@
 
                         </div>
                         <p class="sale_p"> <b>   <h3 class="sale__ph3"  >50K - 100$ </h3></b>
-                            <!-- <i class="fa fa-money" aria-hidden="true"></i>> <b>   <h3>50K - 100$ </h3></b> -->
                         </p>
                         <p class="sale_p" olor:rgb(4, 128, 0);></p> <b>  <h3 class="sale__ph3 " ><b>100K - 200$ </h3></b>
-                        <!-- <i class="fa fa-money " aria-hidden="true "></i >   <b>  100K - 200$ </b> -->
                         </p>
                         <p class="sale_p " olor:rgb(4, 128, 0)><b>  <h3 class="sale__ph3"> 200K - 300$ </h3> </b>
-                            <!-- <i class="fa fa-money" aria-hidden="true"></i >   <b>  200K - 300$ </b> -->
                         </p>
                         <p class="sale_p" olor:rgb(25, 2, 139);><b> <h3 class="sale__ph3 " >300K - 400$ </h3></b>
-                            <!-- <i class="fa fa-money " aria-hidden="true "></i >   <b>  300K - 400$ </b> -->
                         </p>
                         <p class="sale_p " olor:rgb(0, 0, 0);><b>  <h3 class="sale__ph3"> 400K - 500$ </h3></b>
-                            <!-- <i class="fa fa-money" aria-hidden="true"></i >   <b>  <h3>500K - 600$</h2> </b> -->
                         </p>
                         <p class="sale_p " olor:rgb(0, 0, 0);><b>  <h3 class="sale__ph3"> 500K - 600$ </h3></b>
-                            <!-- <i class="fa fa-money" aria-hidden="true"></i >   <b>  <h3>500K - 600$</h2> </b> -->
                         </p>
 
 
@@ -404,71 +436,61 @@
                     <div class="page_logo">
                         <h2 class="logo_h2"> Saytlar orqali ro'yxatdan o'tish</h2>
                         <div class="logo_conter">
-                            <a href="https://msolutionff.com/ref/372/"> <img class="logo_img" src="/static/images/photo_1_2023-12-06_14-41-53.jpg " alt=" ">
+                            <a href="https://msolutionff.com/ref/372/"> <img class="logo_imgs" src="/static/images/photo_1_2023-12-06_14-41-53.jpg " alt=" ">
                             </a>
-                            <!-- <img class="logo_img" src="/static/images/photo_1_2023-12-06_14-41-53.jpg " alt=" "> -->
                             <div class="logo_link">
                                 <a class="logo_link_text" href="https://msolutionff.com/ref/372/"> <b>Msolutionff</b></a>
                             </div>
                         </div>
                         <div class="logo_conter">
-                            <a href=""> <img class="logo_img" src="/static/images/photo_2_2023-12-06_14-41-53.jpg " alt=" ">
+                            <a href=""> <img class="logo_imgs" src="/static/images/photo_2_2023-12-06_14-41-53.jpg " alt=" ">
                             </a>
-                            <!-- <img class="logo_img" src="/static/images/photo_2_2023-12-06_14-41-53.jpg " alt=" "> -->
                             <div class="logo_link">
                                 <a class="logo_link_text" href=" "> <b>M D P</b></a>
                             </div>
                         </div>
                         <div class="logo_conter">
-                            <a href="https://trading.infinityforexfunds.com/#a_aid=6571986c45b8d"> <img class="logo_img" src="/static/images/photo_3_2023-12-06_14-41-53.jpg " alt=" ">
+                            <a href="https://trading.infinityforexfunds.com/#a_aid=6571986c45b8d"> <img class="logo_imgs" src="/static/images/photo_3_2023-12-06_14-41-53.jpg " alt=" ">
                             </a>
-                            <!-- <img class="logo_img" src="/static/images/photo_3_2023-12-06_14-41-53.jpg " alt=" "> -->
+                            <!-- <img class="logo_imgs" src="/static/images/photo_3_2023-12-06_14-41-53.jpg " alt=" "> -->
                             <div class="logo_link">
                                 <a class="logo_link_text" href="https://trading.infinityforexfunds.com/#a_aid=6571986c45b8d"> <b>INFINITY</b></a>
                             </div>
                         </div>
                         <div class="logo_conter">
-                            <a href="https://trueforexfunds.com/#a_aid=84099"> <img class="logo_img" src="/static/images/photo_6_2023-12-06_14-41-53.jpg " alt=" ">
+                            <a href="https://trueforexfunds.com/#a_aid=84099"> <img class="logo_imgs" src="/static/images/photo_6_2023-12-06_14-41-53.jpg " alt=" ">
                             </a>
-                            <!-- <img class="logo_img" src="/static/images/photo_6_2023-12-06_14-41-53.jpg " alt=" "> -->
                             <div class="logo_link">
                                 <a class="logo_link_text" href="https://trueforexfunds.com/#a_aid=84099"> <b>Funding Forex Traders </b></a>
                             </div>
                         </div>
                         <div class="logo_conter">
-                            <a href="https://trading.quantectrading.com/shop/#a_aid=shuhfay"> <img class="logo_img" src="/static/images/photo_4_2023-12-06_14-41-53.jpg " alt=" ">
+                            <a href="https://trading.quantectrading.com/shop/#a_aid=shuhfay"> <img class="logo_imgs" src="/static/images/photo_4_2023-12-06_14-41-53.jpg " alt=" ">
                             </a>
-                            <!-- <img class="logo_img" src="/static/images/photo_4_2023-12-06_14-41-53.jpg " alt=" "> -->
                             <div class="logo_link">
                                 <a class="logo_link_text" href="https://trading.quantectrading.com/shop/#a_aid=shuhfay"> <b>QUANTECT </b></a>
                             </div>
                         </div>
                         <div class="logo_conter">
-                            <a href="https://kortanafx.com/?linkId=lp_737338&sourceId=shuhrat-fayziyev&tenantId=kortanafx&affS1=YOUR_VALUE"> <img class="logo_img1" src="/static/images/photo_5_2023-12-06_14-41-53.jpg " alt=" ">
+                            <a href="https://kortanafx.com/?linkId=lp_737338&sourceId=shuhrat-fayziyev&tenantId=kortanafx&affS1=YOUR_VALUE"> <img class="logo_imgs1" src="/static/images/photo_5_2023-12-06_14-41-53.jpg " alt=" ">
                             </a>
-                            <!-- <img class="logo_img1" src="/static/images/photo_5_2023-12-06_14-41-53.jpg " alt=" "> -->
                             <div class="logo_link">
                                 <a class="logo_link_text" href="https://kortanafx.com/?linkId=lp_737338&sourceId=shuhrat-fayziyev&tenantId=kortanafx&affS1=YOUR_VALUE"><b>KORTANA</b></a>
                             </div>
                         </div>
-                        <div class="logo_conter">
-                            <a href=""> <img class="logo_img" src="/static/images/photo_7_2023-12-06_14-41-53.jpg " alt=" ">
-                            </a>
-                            <!-- <img class="logo_img" src="/static/images/photo_7_2023-12-06_14-41-53.jpg " alt=" "> -->
-                            <div class="logo_link">
-                                <b>PROP ALGO TRADING</b>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
+
         </header>
         <style>
             
             .brokers_contener {
                 position: relative;
-                top: -150px;
+                display: block;
+                top: 50px;
                 width: 100%;
-                height: 400px;
+                height: 700px;
                 border-radius: 70px;
                 background-color: aliceblue;
             }
@@ -507,24 +529,16 @@
             .broker_texth2 {
                 position: relative;
                 top: -700px;
-                /* color: rgb(0, 0, 0); */
-                text-shadow: 6px 6px 6px 6px rgb(69, 5, 196);
+                color: #ffffff;
+                text-shadow: 6px 6px 6px 6px #ffffff;
                 text-align: center;
                 font-size: 50px;
-                /* transform: rotate3d(10, 1, 0); */
-                /* position: absolute; */
-                /* top: 50%; */
-                /* right: 50%; */
-                /* transform: translate(50%, -50%); */
                 text-transform: capitalize;
                 font-family: 'Times New Roman', Times, serif;
-                /* font-size: 12em; */
                 font-weight: 300;
-                /* color: #0cafc4; */
-                background: -webkit-linear-gradient(#e40808, rgb(18, 0, 85));
+                background: -webkit-linear-gradient(#ffffff, #ffffff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                /* text-shadow: 1px 1px 1px #0e0d0d, 1px 2px 1px #fdfcfc, 1px 3px 1px #f1eded, 1px 4px 1px #fffefe, 1px 5px 1px #f8f5f5, 1px 6px 1px #fdfafa, 1px 7px 1px #faf7f7, 1px 8px 1px #faf7f7, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); */
             }
             
             .broker_div {
@@ -545,10 +559,10 @@
                 color: black;
             }
             .broker_texth1{
-                text-shadow: 6px 6px 6px 6px rgb(69, 5, 196);
+                text-shadow: 6px 6px 6px 6px red;
                 text-align: center;
                 font-size: 50px;
-                background: -webkit-linear-gradient(#e40808, rgb(18, 0, 85));
+                background: -webkit-linear-gradient(red, red);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -565,32 +579,43 @@
                 font-size: 25px;
             }
             @media screen and (max-width: 1008px){
-                .brokers_contener{
-                    top: -240px;
+               
+        /* Styles for screens with a maximum width of 1008px */
+
+                .page_insert {
+                    top: 100px;
+                    height: 1000px;
                 }
-                .broker_texth2{
+
+                /* Add more styles for smaller screens as needed */
+                
+                .brokers_contener {
+                    top: 150px;
+                }
+
+                .broker_texth2 {
                     font-size: 25px;
                 }
-                .broker_texth4{
+
+                .broker_texth4 {
                     font-size: 22px;
                 }
+
                 .broker_texth1 {
-                    position: relative;
-                    /* top: -80px; */
                     font-size: 24px;
+                    color: #ffffff;
                 }
-                .logo_a{
-                    width: 60%;
+
+                
+
+                .logo_img {
+                    width: 70px;
                     height: 40px;
-                }
-                .logo_img{
-                    margin: 2px 2px;
-                }
-                .logo_a1{
-                    position: relative;
-                    /* top: -85px; */
+                    margin: 0px,0px, 0px,0px;
                     
                 }
+
+       
                 .logo_atext1{
                     position: relative;
                     /* top: -85px; */
@@ -599,8 +624,8 @@
                     position: relative;
                     /* top: -85px; */
                     margin-bottom: 20px;
-                }
-            }
+                } 
+            
         </style>
         <div class="brokers_contener">
             <img class="brokers_img" src="/static/images/pexels-alphatradezone-5833273.jpg" alt="" srcset="">
@@ -657,11 +682,19 @@
                 </a>
             </div>
         </div>
+
+
         <!-- end header section -->
         <!-- slider section -->
-        <section class="slider_section ">
-            <div id="customCarousel1 " class="carousel slide " data-ride="carousel ">
-                <div class="carousel-inner ">
+        <style>
+            .slider_section {
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        <section  class="slider_section ">
+            <div id="customCarousel1 " class="carousel slide " data-ride="carousel "> 
+                <!-- <div class="carousel-inner "> 
                     <div class="carousel-item active ">
                         <div class="container ">
                             <div class="row ">
@@ -743,8 +776,8 @@
                         <i class="fa fa-angle-right " aria-hidden="true "></i>
                         <span class="sr-only ">Next</span>
                     </a>
-                </div>
-            </div>
+                </div> -->
+            </div> 
         </section>
         <!-- end slider section -->
         </div>
@@ -753,9 +786,7 @@
 
         <section class="service_section layout_padding ">
             <div class="container ">
-                <div class="heading_container heading_center ">
-                    
-                </div>
+                
             </div>
             <div class="container ">
                 <div class="row ">
@@ -805,7 +836,7 @@
                             </div>
                             <div class="detail-box ">
 
-                                <p style="color: #0c0736;" >
+                                <p style="color: #0c0736;">
                                     Oddiy sozlamalarQulay xavf darajasini va lot hajmini tanlang. Algoritm qolganini o'zi qiladi </p>
                                 
                             </div>
