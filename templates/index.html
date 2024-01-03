@@ -250,6 +250,8 @@
             }
             
             .container {
+                position: relative;
+                text-align: center;
                 background-color: primary-color;
                 width: 600px;
                 /* top: -600px; */
@@ -260,16 +262,7 @@
                 place-items: center;
                 line-height: 1.5;
                 box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
-                &::after {
-                    content: '';
-                    top: 200px;
-                    position: absolute;
-                    background-image: linear-gradient(to bottom right, #240b80, #6c058b);
-                    width: 900px;
-                    height: 900px;
-                    border-radius: 50%;
-                    z-index: -1;
-                }
+                
                 &-close {
                     position: absolute;
                     top: -15px;
