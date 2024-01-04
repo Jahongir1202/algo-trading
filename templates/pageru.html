@@ -246,14 +246,7 @@
                         box-shadow: 10px -10px 12px rgb(247, 250, 250) inset;
 
                     }
-                    @media screen and (min-width:1376){
-                        .page_servis {
-                            top: 100px;
-                            
-                        }
-
-                        
-                    }
+                    
                     @media (min-width: 1000px) and (max-width: 1375px){
                         .page_servis {
                             left: 10px;
@@ -269,7 +262,7 @@
                         }
                     }
                     
-                    @media screen and (max-width: 1000px) {
+                    @media (min-width:350px) and (max-width:1000px)  {
                         
                         .page_img2 {
                             width: 100%;
@@ -317,16 +310,18 @@
                             padding: 0;
                             top: -250px;
                             left: 120px ;
-                            width: 240px;
+                            width: 200px;
                         }
-                        
+                        .server_section .img-box img {
+                            display: none;
+                        }
                         
                         .servis_h4 {
                             font-size: 15px;
                             
                         }
                         .servis_ph4 {
-                            font-size: 15px;
+                            font-size: 10px;
                             margin: 0px 0px 0px;
                         }
                         .logo_link_text {
@@ -335,7 +330,7 @@
                         }
                         .page_logo {
                             position: relative;
-                            top: -250px;
+                            top: -200px;
                         }
                         .logo_conter{
                             font-size: 0rem;
@@ -354,10 +349,13 @@
                             top: -30px;
                         }
                     }
+                    @media  (max-width:400px) {
+                        
+                        
+                        
+                    }
                 </style>
                 <div class="page_insert">
-                    <div class="page_sfera"></div>
-                    <div class="page_sferablue"></div>
                     <div class="page_text1">
                         <h3 class="page_text1_h3">Мы запустили сервис по аренде торговых роботов у проп-компаний, сдающих экзамены</h3>
                         <div class="text1_p">
@@ -582,8 +580,8 @@
         /* Styles for screens with a maximum width of 1008px */
 
                 .page_insert {
-                    top: 100px;
-                    height: 1000px;
+                    top: 0px;
+                    height: 1100px;
                 }
 
                 /* Add more styles for smaller screens as needed */
