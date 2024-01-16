@@ -325,6 +325,12 @@
                     }
                 }
             }
+            .form_media{
+                position: relative;
+                z-index: 2;
+                width: 200%;
+                font-size: 50px;
+            }
             @media screen and (max-width: 1008px) {
                 .container{
                     height: auto;
@@ -336,7 +342,7 @@
                     height: auto;
                     text-align: center;
                 }
-                .form-horizontal{
+                .form_media{
                     font-size: 70%;
                     width: 230%;
                 }
@@ -345,7 +351,7 @@
 
         <div class="container">
             <div class="container-text">
-                <form style=" position: relative;z-index: 2;width: 200%: 50px;" class="form-horizontal" method="post" action="{% url 'index' %}">
+                <form  class="form-horizontal form_media" method="post" action="{% url 'index' %}">
                     {% csrf_token %}
                     <div class="form-group">
                         <label class="" for="ism"></label>
